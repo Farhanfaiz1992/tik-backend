@@ -33,7 +33,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = os.getenv("DEBUG")
 
 ALLOWED_HOSTS = [
-    "tikbackend-hmdbarhwfzfhdpeg.ukwest-01.azurewebsites.net",
+    "tikbackend-bpgvgnd7djhuf2h2.uksouth-01.azurewebsites.net",
     "127.0.0.1",
     "localhost"
 ]
@@ -41,7 +41,7 @@ ALLOWED_HOSTS = [
 
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://tikbackend-hmdbarhwfzfhdpeg.ukwest-01.azurewebsites.net/"
+    "https://tikbackend-bpgvgnd7djhuf2h2.uksouth-01.azurewebsites.net/"
 ]
 
 
@@ -135,6 +135,8 @@ DATABASES = {
 
         'OPTIONS': {
             'driver': 'ODBC Driver 18 for SQL Server',
+            'encrypt': True,
+            'trust_server_certificate': False,
         },
     },
 }
